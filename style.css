@@ -23,3 +23,19 @@ main {
 h1, h2 {
   color: #005a9c;
 }
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border: 4px solid #ccc;
+  border-radius: 8px;
+  background: white;
+  object-fit: cover;
+}
